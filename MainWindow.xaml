@@ -1,0 +1,22 @@
+﻿<Window x:Class="jumping_pathak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jumping_pathak"
+        mc:Ignorable="d"
+        Title="Jump Pathak Jump" Height="450" Width="800">
+    <Canvas Name="Canvas" Focusable="True" KeyDown="keyDown" KeyUp="keyUp">
+        <Rectangle Name="Background1" Width="1200" Height="450" Canvas.Left="0" Canvas.Top="0"  Fill="#FF1B1B1B"/>
+        <Rectangle Name="Background2" Width="1200" Height="450" Canvas.Left="1200" Canvas.Top="0"  Fill="Bisque"/>
+
+        <Rectangle Name="Obstacle" Width="61" Height="100" Canvas.Left="225" Canvas.Bottom="40" HorizontalAlignment="Left" Canvas.Top="294" VerticalAlignment="Center" />
+
+        <Rectangle Name="Player" Width="87" Height="139" Canvas.Left="100" Canvas.Bottom="40" HorizontalAlignment="Center" Canvas.Top="255" VerticalAlignment="Top" />
+
+        <Label Name="ScoreTxt" FontSize="32" FontWeight="Bold" Content="Score : 0" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFFBFBFB" />
+        <Label x:Name="newgame" Content="Welcome to Jump Pathak Jump" Canvas.Left="10" Canvas.Top="137" Height="62" Width="790" VerticalAlignment="Center" FontFamily="Bauhaus 93" Cursor="Arrow" FontSize="36" HorizontalAlignment="Left" Panel.ZIndex="1010" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Rectangle x:Name="jerry" Height="60" Canvas.Left="346" Canvas.Top="334" Width="64" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label x:Name="secondtext" Content="Press enter to start the game" Canvas.Left="1" Canvas.Top="217" HorizontalAlignment="Left" VerticalAlignment="Center" Width="789" FontSize="24" FontFamily="SimSun" Foreground="#FFC3C3C3" Background="{x:Null}" Panel.ZIndex="10010" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Canvas>
+</Window>
